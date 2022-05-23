@@ -15,14 +15,17 @@
         <h1>
             Real-time Audio Transcription
         </h1>
-       
+
         <div id="error" class="isa_error"></div>
 
         <div class="row">
             <div class="col">
                 <label>Access ID:</label>
                 <input type="password" id="access_id" placeholder="ACCESS ID" value="" />
-                <id="secret_key" placeholder="SECRET KEY" value="KqKOm+5LavlqBMPX0ouowUZuT6qThN1tbekEWWz3" />
+
+                <label>Secret Key:</label>
+                <input type="password" id="secret_key" placeholder="SECRET KEY" value="KqKOm+5LavlqBMPX0ouowUZuT6qThN1tbekEWWz3" />
+               
             </div>
             <div class="col">
                 <label>Language: </label>
@@ -39,20 +42,20 @@
                     <optgroup label="Spanish">
                         <option value="es-US">US Spanish (es-US)</option>
                     </optgroup>
-                <div class="col">
-                    <label>Region:</label>
-                    <select id="region">
-                        <option value="us-east-1">US East (N. Virginia)</option>
-                        <option value="us-east-2">US East (Ohio)</option>
-                        <option value="us-west-2">US West (Oregon)</option>
-                        <option value="ap-southeast-2">Asia Pacific (Sydney)</option>
-                        <option value="ca-central-1">Canada (Central)</option>
-                        <option value="eu-west-1">EU (Ireland)</option>
-                    </select>
-                    </div>
+                </select>
+
+                <label>Region:</label>
+                <select id="region">
+                    <option value="us-east-1">US East (N. Virginia)</option>
+                    <option value="us-east-2">US East (Ohio)</option>
+                    <option value="us-west-2">US West (Oregon)</option>
+                    <option value="ap-southeast-2">Asia Pacific (Sydney)</option>
+                    <option value="ca-central-1">Canada (Central)</option>
+                    <option value="eu-west-1">EU (Ireland)</option>
+                </select>
             </div>
         </div>
-        <textarea id="transcript" placeholder="Press Start and speak into your mic" cols="40" rows="25"
+        <textarea id="transcript" placeholder="Press Start and speak into your mic" rows="20" cols="30"
             readonly="readonly"></textarea>
         <div class="row">
             <div class="col">
@@ -65,11 +68,6 @@
                 <button id="reset-button" class="button-xl button-secondary" title="Clear Transcript"> 
                     Clear Transcript
                 </button>
-            </div>
-            <div class="col">
-                <a class="float-right" href="https://aws.amazon.com/free/" aria-label="Amazon Web Services">
-                    <img id="logo" src="AWS_logo_RGB.png" alt="AWS Logo" />
-                </a>
             </div>
         </div>
     </div>
